@@ -18,10 +18,7 @@ export class PlayerListComponent implements OnInit {
 
   ngOnInit() {
     this.players = this.playerService.getPlayers();
-    var subs = this.playerService.getPlayers().subscribe((player)=>{
-      console.log(player);
-      subs.unsubscribe();
-    })
+    
   }
 
 }
