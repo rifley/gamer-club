@@ -12,4 +12,8 @@ export class PlayerService {
   getPlayers() {
     return this.players;
   }
+
+  getPlayerByTag(playerTag) {
+    return this.database.object('player/'+playerTag)
+  }
 }

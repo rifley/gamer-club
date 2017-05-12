@@ -21,8 +21,8 @@ export class PlayerListComponent implements OnInit {
 
   }
 
-  goToDetailsPage(player: Player) {
-
+  goToDetailsPage(player: any) {
+     this.router.navigate(['players', player.tag]);
   }
 
 }
