@@ -8,51 +8,44 @@
     "catchPhrase": "We already lost"
   },
   {
-    "name": "",
-    "tag": "",
+    "name": "Brady Watts",
+    "tag": "wheatylicious",
     "image": "",
-    "overwatch": {"favoriteHeros": [], "role": ""},
-    "league": {"favoriteChampions": [], "role": , "division": ""},
-    "catchPhrase": ""
+    "overwatch": {"favoriteHeros": ["Mercy", "Reinhardt", "Lucio"], "role": "Support/ Tank"},
+    "league": {"favoriteChampions": ["Bard", "Blitzpunk", "Ekko"], "role":"Support/ Mid" , "division": "Gold V, Plat at Heart"},
+    "catchPhrase": "This is gonna be a blast"
   },
   {
-    "name": "",
-    "tag": "",
+    "name": "Cary Watts",
+    "tag": "tehoovalitious",
     "image": "",
-    "overwatch": {"favoriteHeros": [], "role": ""},
-    "league": {"favoriteChampions": [], "role": , "division": ""},
-    "catchPhrase": ""
+    "overwatch": {"favoriteHeros": ["Junkrat", "Hanzo", "Dva"], "role": "Scrub/ Fill"},
+    "league": {"favoriteChampions": ["Sejuani", "Heimerdinger", "Vel'Koz"], "role": "Top/ Mid" , "division": "Bronze III, Silver I at heart"},
+    "catchPhrase": "cy@ ***** ***s"
   },
   {
-    "name": "",
-    "tag": "",
+    "name": "Dugan Watts",
+    "tag": "shoovalicious",
     "image": "",
-    "overwatch": {"favoriteHeros": [], "role": ""},
-    "league": {"favoriteChampions": [], "role": , "division": ""},
-    "catchPhrase": ""
+    "overwatch": {"favoriteHeros": ["Genji", "Hanzo", "Dva"], "role": "Attack/ Carry"},
+    "league": {"favoriteChampions": ["Lee Sin", "Ezreal", "Zac"], "role": "Jungle/ Carry" , "division": "Silver I, Diamond at heart"},
+    "catchPhrase": "He doesn't deserve it"
   },
   {
-    "name": "",
-    "tag": "",
+    "name": "Brad Barrow",
+    "tag": "bonerchamp22",
     "image": "",
-    "overwatch": {"favoriteHeros": [], "role": ""},
-    "league": {"favoriteChampions": [], "role": , "division": ""},
-    "catchPhrase": ""
+    "overwatch": {"favoriteHeros": ["Hanzo", "Roadhog", "Tracer"], "role": "Scrublord"},
+    "league": {"favoriteChampions": ["Pantheon", "Morganna", "Jhin"], "role": "Flex/ Top" , "division": "Silver I, Gold V at heart"},
+    "catchPhrase": "Take it easy"
   },
   {
-    "name": "",
-    "tag": "",
+    "name": "Joe Watts",
+    "tag": "crazy joe",
     "image": "",
-    "overwatch": {"favoriteHeros": [], "role": ""},
-    "league": {"favoriteChampions": [], "role": , "division": ""},
-    "catchPhrase": ""
-  },
-  {
-    "name": "",
-    "tag": "",
-    "image": "",
-    "overwatch": {"favoriteHeros": [], "role": ""},
-    "league": {"favoriteChampions": [], "role": , "division": ""},
-    "catchPhrase": ""
-  },
+    "overwatch": {"favoriteHeros": ["The Hook Guy", "Merva", "Bomb Guy"], "role": "Background player"},
+    "league": {"favoriteChampions": ["Horse dude", "Ashe", "Tryndamere"], "role": "Alt Scrublord" , "division": "Wood V"},
+    "catchPhrase": "You'll never take me alive"
+  }
+
   ]}
