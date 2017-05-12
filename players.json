@@ -1,0 +1,58 @@
+{ "players": [
+  {
+    "name": "Riley Watts",
+    "tag": "hoovalicious",
+    "image": "",
+    "overwatch": {"favoriteHeros": ["Mcree", "Pharah", "Zenyatta"], "role": "Attack/ Flex"},
+    "league": {"favoriteChampions": ["Graves", "Karma", "Brand"], "role": "Jungle/ Mid", "division": "Silver III, Diamond at Heart"},
+    "catchPhrase": "We already lost"
+  },
+  {
+    "name": "",
+    "tag": "",
+    "image": "",
+    "overwatch": {"favoriteHeros": [], "role": ""},
+    "league": {"favoriteChampions": [], "role": , "division": ""},
+    "catchPhrase": ""
+  },
+  {
+    "name": "",
+    "tag": "",
+    "image": "",
+    "overwatch": {"favoriteHeros": [], "role": ""},
+    "league": {"favoriteChampions": [], "role": , "division": ""},
+    "catchPhrase": ""
+  },
+  {
+    "name": "",
+    "tag": "",
+    "image": "",
+    "overwatch": {"favoriteHeros": [], "role": ""},
+    "league": {"favoriteChampions": [], "role": , "division": ""},
+    "catchPhrase": ""
+  },
+  {
+    "name": "",
+    "tag": "",
+    "image": "",
+    "overwatch": {"favoriteHeros": [], "role": ""},
+    "league": {"favoriteChampions": [], "role": , "division": ""},
+    "catchPhrase": ""
+  },
+  {
+    "name": "",
+    "tag": "",
+    "image": "",
+    "overwatch": {"favoriteHeros": [], "role": ""},
+    "league": {"favoriteChampions": [], "role": , "division": ""},
+    "catchPhrase": ""
+  },
+  {
+    "name": "",
+    "tag": "",
+    "image": "",
+    "overwatch": {"favoriteHeros": [], "role": ""},
+    "league": {"favoriteChampions": [], "role": , "division": ""},
+    "catchPhrase": ""
+  },
+  ]}
