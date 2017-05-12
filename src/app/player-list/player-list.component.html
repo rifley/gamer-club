@@ -1,20 +1,20 @@
 <h1> Players </h1>
 
-<div *ngFor="let player of players | async" class="c-card c-card--higher">
+<div *ngFor="let player of players | async" (click)="goToDetailsPage(player)" class="c-card c-card--higher">
   <img class="o-image" src="#" alt="{{player.name}} in their finest">
   <header class="c-card__header">
     <h2 class="c-heading">
       {{player?.name}} aka <em>{{player?.tag}}</em>
-      <div class="c-heading__sub">{{player?.catchPhrase}}</div>
+      <div class="c-heading__sub">-"{{player?.catchPhrase}}"</div>
     </h2>
   </header>
   <div class="c-card__body">
-    <p class="c-paragraph">Favorite Champions:{{player?.league.favoriteChampions[0]}}, {{player?.league.favoriteChampions[1]}}, {{player?.league.favoriteChampions[2]}}. Role: {{player?.league.role}}. Division: {{player?.league.division}}</p>
+    <p class="c-paragraph">{{player.bio}}</p>
   </div>
-  <footer class="c-card__footer c-card__footer--block">
+  <footer *ngIf="admin" class="c-card__footer c-card__footer--block">
     <div class="c-input-group">
-      <button class="c-button c-button--block c-button--brand">League of Legends</button>
-      <button class="c-button c-button--block c-button--info">Overwatch</button>
+      <button class="c-button c-button--block c-button--brand">Edit</button>
+      <button class="c-button c-button--block c-button--info">Delete</button>
     </div>
   </footer>
 </div>

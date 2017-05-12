@@ -6,7 +6,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 
 
 @Component({
-  selector: 'player-list',
+  selector: 'app-player-list',
   templateUrl: './player-list.component.html',
   styleUrls: ['./player-list.component.css'],
   providers: [PlayerService]
@@ -18,7 +18,11 @@ export class PlayerListComponent implements OnInit {
 
   ngOnInit() {
     this.players = this.playerService.getPlayers();
-    
+
+  }
+
+  goToDetailsPage(player: Player) {
+
   }
 
 }
