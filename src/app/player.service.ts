@@ -13,7 +13,11 @@ export class PlayerService {
     return this.players;
   }
 
-  getPlayerByTag(playerTag) {
-    return this.database.object('player/'+playerTag)
+  getPlayerById(playerId: string) {
+    return this.database.object('players/'+playerId)
+  }
+
+  addPlayer(newPlayer: Player){
+    this.players.push(newPlayer);
   }
 }

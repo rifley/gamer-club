@@ -13,6 +13,11 @@ import { routing } from './app.routing';
 import { PlayerDetailsComponent } from './player-details/player-details.component';
 import { AboutComponent } from './about/about.component';
 import { PlayerListComponent } from './player-list/player-list.component';
+import { EditPlayerComponent } from './edit-player/edit-player.component';
+import { AdminComponent } from './admin/admin.component';
+import { AddPlayerComponent } from './add-player/add-player.component';
+import { NewFanComponent } from './new-fan/new-fan.component';
+import { RosterPageComponent } from './roster-page/roster-page.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -27,7 +32,12 @@ export const firebaseConfig = {
     WelcomeComponent,
     PlayerDetailsComponent,
     AboutComponent,
-    PlayerListComponent
+    PlayerListComponent,
+    EditPlayerComponent,
+    AdminComponent,
+    AddPlayerComponent,
+    NewFanComponent,
+    RosterPageComponent
   ],
   imports: [
     BrowserModule,

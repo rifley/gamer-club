@@ -1,1 +1,4 @@
-<app-player-list></app-player-list>
+
+<button *ngIf="!admin" (click)="setAdmin()">Admin</button>
+<button *ngIf="admin" (click)="setNormalUser()">Admin Off</button>
+<app-admin *ngIf="admin"></app-admin>

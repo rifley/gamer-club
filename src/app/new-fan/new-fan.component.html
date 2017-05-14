@@ -1,0 +1,53 @@
+<form class="form">
+  <div class="row gutters">
+    <div class="col col-5">
+      <div class="form-item">
+        <label>Name: </label>
+        <input #newName type="text"  class="form-item">
+      </div>
+    </div>
+    <div class="col col-3">
+      <div class="form-item">
+        <label>Gamer tag: </label>
+        <input #newNickName type="text"  class="form-item">
+      </div>
+    </div>
+  </div>
+    <div class="form-item">
+        <label>Image URL: </label>
+        <input #newFavorite type="text"  class="form-item col col-8">
+    </div>
+    <div class="row gutters">
+      <div class="col col-6">
+        <div class="form-item">
+            <label>Favorite Champions:</label>
+            <input #newFavoritePlayer1 type="text"  class="form-item">
+            <input #newFavoritePlayer1 type="text"  class="form-item">
+            <input #newFavoritePlayer1 type="text"  class="form-item">
+        </div>
+      </div>
+      <div class="col col-6">
+        <div class="form-item">
+            <label>Role: </label>
+            <input #newRole type="text"  class="form-item">
+        </div>
+      </div>
+    </div>
+    <div class="form-item">
+        <label>Division: </label>
+        <input #division type="text"  class="form-item">
+    </div>
+    <div class="form-item">
+        <label>Catchphrase: </label>
+        <input #catchPhrase type="text"  class="form-item col col-8">
+    </div>
+    <div class="form-item">
+        <label>Bio: </label>
+        <textarea #newBio rows="6" class="col col-8"></textarea>
+    </div>
+    <div class="form-item">
+        <button (click)="submitNewFan(newName.value, newTag.value, newCatchPhrase.value, newBio.value)">Submit</button>
+        <button class="button secondary outline">Close Form</button>
+    </div>
+
+</form>

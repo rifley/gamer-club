@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Player } from '../player.model';
-import { Router } from '@angular/router';
 import { PlayerService } from '../player.service';
 import { FirebaseListObservable, FirebaseObjectObservable } from 'angularfire2/database';
 import { ActivatedRoute, Params } from '@angular/router';
@@ -13,16 +12,18 @@ import { Location } from '@angular/common';
   providers: [PlayerService]
 })
 export class PlayerDetailsComponent implements OnInit {
-  playerTag : string = null;
+  playerId : string;
+  player;
 
 
   constructor(private playerService: PlayerService, private route: ActivatedRoute, private location: Location) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters)=> {
-      this.playerTag = (urlParameters['tag']);
+      this.playerId = (urlParameters['id']);
     });
-    console.log(this.playerTag);
+    this.player = this.playerService.getPlayerById(this.playerId);
+    console.log(this.player);
 
   }
 

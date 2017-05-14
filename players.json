@@ -4,54 +4,62 @@
     "tag": "hoovalicious",
     "image": "",
     "bio": "Oldest on the team and a natural born leader: hoovalicious(riley watts) leads his teammates to great heights. His rage knows no bounds when it comes to enemy players flaming and trolling.",
-    "overwatch": {"favoriteHeros": ["Mcree", "Pharah", "Zenyatta"], "role": "Attack/ Flex"},
-    "league": {"favoriteChampions": ["Graves", "Karma", "Brand"], "role": "Jungle/ Mid", "division": "Silver III, Diamond at Heart"},
-    "catchPhrase": "We already lost"
+    "favoriteChampions": ["Graves", "Karma", "Brand"],
+    "role": "Jungle/ Mid",
+    "division": "Silver III, Diamond at Heart",
+    "catchPhrase": "We already lost",
+    "id":"0"
   },
   {
     "name": "Brady Watts",
     "tag": "wheatylicious",
     "image": "",
     "bio": "Second oldest and also a natural leader: wheatylicious rides waves of glory and inspires his teammates to be the best versions of themselves. Durable and light-hearted, wheatylicious brings a calming/centering energy to the team.",
-    "overwatch": {"favoriteHeros": ["Mercy", "Reinhardt", "Lucio"], "role": "Support/ Tank"},
-    "league": {"favoriteChampions": ["Bard", "Blitzpunk", "Ekko"], "role":"Support/ Mid" , "division": "Gold V, Plat at Heart"},
-    "catchPhrase": "This is gonna be a blast"
+    "favoriteChampions": ["Bard", "Blitzpunk", "Ekko"], "role":"Support/ Mid",
+    "division": "Gold V, Plat at Heart",
+    "catchPhrase": "This is gonna be a blast",
+    "id":"1"
   },
   {
     "name": "Cary Watts",
     "tag": "tehoovalitious",
     "image": "",
     "bio": "A worthwhile alternate: tehoovalitious knows no bounds when it comes to exploration. While mechanical skills are up to par, macro strategy falls by the way-side. Tehooalitious brings the much needed wild-card element that inspires all.",
-    "overwatch": {"favoriteHeros": ["Junkrat", "Hanzo", "Dva"], "role": "Scrub/ Fill"},
-    "league": {"favoriteChampions": ["Sejuani", "Heimerdinger", "Vel'Koz"], "role": "Top/ Mid" , "division": "Bronze III, Silver I at heart"},
-    "catchPhrase": "cy@ ***** ***s"
+    "favoriteChampions": ["Sejuani", "Heimerdinger", "Vel'Koz"], "role": "Top/ Mid",
+    "division": "Bronze III, Silver I at heart",
+    "catchPhrase": "cy@ ***** ***s",
+    "id":"2"
   },
   {
     "name": "Dugan Watts",
     "tag": "shoovalicious",
     "image": "",
     "bio": "Small but mighty: shoovalicious is surely a wonder child. This hot-shot hits his shots and knows what to do and how to do it. He can carry and support, whatever the team needs. His light-hearted humor keeps morale high and spirits bright. Watch out for this one",
-    "overwatch": {"favoriteHeros": ["Genji", "Hanzo", "Dva"], "role": "Attack/ Carry"},
-    "league": {"favoriteChampions": ["Lee Sin", "Ezreal", "Zac"], "role": "Jungle/ Carry" , "division": "Silver I, Diamond at heart"},
-    "catchPhrase": "He doesn't deserve it"
+    "favoriteChampions": ["Lee Sin", "Ezreal", "Zac"],
+    "role": "Jungle/ Carry",
+    "division": "Silver I, Diamond at heart",
+    "catchPhrase": "He doesn't deserve it",
+    "id":"3"
   },
   {
     "name": "Brad Barrow",
     "tag": "bonerchamp22",
     "image": "",
     "bio": "New kid on the block: Brad Barrow has solidified his spot with dedication and resourcefulness. He does his research and executes when the time comes.",
-    "overwatch": {"favoriteHeros": ["Hanzo", "Roadhog", "Tracer"], "role": "Scrublord"},
-    "league": {"favoriteChampions": ["Pantheon", "Morganna", "Jhin"], "role": "Flex/ Top" , "division": "Silver I, Gold V at heart"},
-    "catchPhrase": "Take it easy"
+    "favoriteChampions": ["Pantheon", "Morganna", "Jhin"], "role": "Flex/ Top",
+    "division": "Silver I, Gold V at heart",
+    "catchPhrase": "Take it easy",
+    "id":"4"
   },
   {
     "name": "Joe Watts",
     "tag": "crazy joe",
     "image": "",
     "bio": "Sir Scrub & bubbles himself: crazy joe is old school. He doesn't play much but he knows how to watch and annoy the team. His insights are short but numerous, but we love having him around. ",
-    "overwatch": {"favoriteHeros": ["The Hook Guy", "Merva", "Bomb Guy"], "role": "Background player"},
-    "league": {"favoriteChampions": ["Horse dude", "Ashe", "Tryndamere"], "role": "Alt Scrublord" , "division": "Wood V"},
-    "catchPhrase": "You'll never take me alive"
+    "favoriteChampions": ["Horse dude", "Ashe", "Tryndamere"], "role": "Alt Scrublord",
+    "division": "Wood V",
+    "catchPhrase": "You'll never take me alive",
+    "id":"5"
   }
 
   ]}

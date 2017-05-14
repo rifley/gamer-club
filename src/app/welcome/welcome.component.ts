@@ -7,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./welcome.component.css']
 })
 export class WelcomeComponent implements OnInit {
-
+  admin: boolean= null;
   constructor() { }
 
   ngOnInit() {
   }
 
+  setAdmin() {
+    this.admin = true;
+  }
+  setNormalUser() {
+    this.admin = null;
+  }
 }
