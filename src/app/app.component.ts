@@ -13,8 +13,8 @@ export class AppComponent implements OnInit {
 
   constructor(private playerService: PlayerService) {}
 
-  ngOnInit(){
-    var adminStatus = this.playerService.getAdminStatus().subscribe((admin)=>{
+  ngOnInit() {
+    let adminStatus = this.playerService.getAdminStatus().subscribe((admin) => {
       this.admin = admin.value;
     });
   }

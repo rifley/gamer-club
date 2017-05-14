@@ -15,25 +15,24 @@ export class PlayerService {
     return this.players;
   }
   getAdminStatus() {
-    console.log(this.admin);
     return this.admin;
 
   }
   getPlayerById(playerId: string) {
-    return this.database.object('players/'+playerId)
+    return this.database.object('players/' + playerId);
   }
 
   setAdmin() {
-    var adminStatus = this.admin;
-    adminStatus.update({value: true})
+    let adminStatus = this.admin;
+    adminStatus.update({value: true});
   }
 
   setNormalUser() {
-    var adminStatus = this.admin;
+    let adminStatus = this.admin;
     adminStatus.update({value: false});
   }
 
-  addPlayer(newPlayer: Player){
+  addPlayer(newPlayer: Player) {
     this.players.push(newPlayer);
   }
 }

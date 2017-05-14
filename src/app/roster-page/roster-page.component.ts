@@ -13,9 +13,9 @@ export class RosterPageComponent implements OnInit {
   constructor(private playerService: PlayerService) { }
 
   ngOnInit() {
-    var adminStatus = this.playerService.getAdminStatus().subscribe((admin)=>{
+    let adminStatus = this.playerService.getAdminStatus().subscribe((admin) => {
       this.admin = admin.value;
-    })
+    });
   }
 
 

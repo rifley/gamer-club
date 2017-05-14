@@ -14,13 +14,13 @@ export class AddPlayerComponent implements OnInit {
   constructor(private playerService: PlayerService) { }
 
   ngOnInit() {
-    var adminStatus = this.playerService.getAdminStatus().subscribe((admin)=>{
+    let adminStatus = this.playerService.getAdminStatus().subscribe((admin) => {
       this.admin = admin.value;
-    })
+    });
   }
-  submitNewPlayer(name: string, tag: string, url: string, bio: string, champ1: string, champ2: string, champ3: string, role: string, division: string, catchPhrase: string){
-    var favoriteChampions : string[] = [champ1, champ2, champ3];
-    var newPlayer: Player = new Player(name, tag, url, bio, favoriteChampions, role, division, catchPhrase);
+  submitNewPlayer(name: string, tag: string, url: string, bio: string, champ1: string, champ2: string, champ3: string, role: string, division: string, catchPhrase: string) {
+    let favoriteChampions: string[] = [champ1, champ2, champ3];
+    let newPlayer: Player = new Player(name, tag, url, bio, favoriteChampions, role, division, catchPhrase);
     this.playerService.addPlayer(newPlayer);
 
   }

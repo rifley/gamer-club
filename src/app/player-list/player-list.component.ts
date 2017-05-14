@@ -19,11 +19,10 @@ export class PlayerListComponent implements OnInit {
 
   ngOnInit() {
     this.players = this.playerService.getPlayers();
-    var adminStatus = this.playerService.getAdminStatus().subscribe((admin)=>{
+    let adminStatus = this.playerService.getAdminStatus().subscribe((admin) => {
       this.admin = admin.value;
 
     });
-    console.log(this.admin);
   }
 
   goToDetailsPage(player: any) {

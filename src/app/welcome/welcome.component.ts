@@ -10,12 +10,11 @@ import { PlayerService } from '../player.service';
 })
 export class WelcomeComponent implements OnInit {
   admin: any;
-  constructor(private playerService : PlayerService) { }
+  constructor(private playerService: PlayerService) { }
 
   ngOnInit() {
-    var adminStatus = this.playerService.getAdminStatus().subscribe((admin)=>{
-      this.admin=admin.value;
-      console.log(admin);
+    let adminStatus = this.playerService.getAdminStatus().subscribe((admin) => {
+      this.admin = admin.value;
     });
   }
 

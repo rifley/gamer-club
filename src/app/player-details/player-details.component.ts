@@ -12,14 +12,14 @@ import { Location } from '@angular/common';
   providers: [PlayerService]
 })
 export class PlayerDetailsComponent implements OnInit {
-  playerId : string;
+  playerId: string;
   player;
 
 
   constructor(private playerService: PlayerService, private route: ActivatedRoute, private location: Location) { }
 
   ngOnInit() {
-    this.route.params.forEach((urlParameters)=> {
+    this.route.params.forEach((urlParameters) => {
       this.playerId = (urlParameters['id']);
     });
     this.player = this.playerService.getPlayerById(this.playerId);
