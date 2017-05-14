@@ -1,5 +1,5 @@
 <div>
-   <h3>{{(player | async)?.name}}</h3>
+   <h3>{{(player | async)?.name}}</h3> <p>{{(player | async)?.$key}}</p>
 </div>
 
-<h1>Test</h1>
+<app-edit-player [selectedPlayer]="player"></app-edit-player>

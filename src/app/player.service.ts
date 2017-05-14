@@ -27,6 +27,7 @@ export class PlayerService {
     adminStatus.update({value: true});
   }
 
+
   setNormalUser() {
     let adminStatus = this.admin;
     adminStatus.update({value: false});
@@ -34,5 +35,11 @@ export class PlayerService {
 
   addPlayer(newPlayer: Player) {
     this.players.push(newPlayer);
+  }
+
+  updatePlayer(updatedPlayer: Player, id: string){
+    let playerInFirebase = this.getPlayerById(id);
+    playerInFirebase.update({name: updatedPlayer.name,
+                            tag: updatedPlayer.tag, image: updatedPlayer.image, bio: updatedPlayer.bio, favoriteChampions: updatedPlayer.favoriteChampions, role: updatedPlayer.role, division: updatedPlayer.division, catchPhrase: updatedPlayer.catchPhrase});
   }
 }

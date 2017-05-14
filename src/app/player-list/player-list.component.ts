@@ -26,7 +26,7 @@ export class PlayerListComponent implements OnInit {
   }
 
   goToDetailsPage(player: any) {
-     this.router.navigate(['players', player.id]);
+     this.router.navigate(['players', player.$key]);
   }
 
 }

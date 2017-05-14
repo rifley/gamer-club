@@ -1,3 +1,65 @@
-<p>
-  edit-player works!
-</p>
+<button (click)="showNewPlayerForm()">Edit Player</button>
+<div id="editPlayer">
+  <form class="form">
+    <div class="row gutters">
+      <div class="col col-5 offset-2">
+        <div class="form-item">
+          <label>Name: </label>
+          <input #name type="text" value="{{(selectedPlayer | async)?.name }}"  class="form-item">
+        </div>
+      </div>
+      <div class="col col-3">
+        <div class="form-item">
+          <label>Gamer tag (or nickname): </label>
+          <input #tag type="text" value="{{(selectedPlayer | async)?.tag }}"  class="form-item">
+        </div>
+      </div>
+    </div> <!-- end first row-->
+      <div class="row gutters">
+        <div class="col col-2 offset-2">
+          <h5><strong>Top Champions:</strong></h5>
+        </div>
+        <div class="col col-2">
+          <div class="form-item">
+            <input #champ1 type="text" value="{{(selectedPlayer | async)?.favoriteChampions[0] }}" class="form-item">
+          </div>
+        </div>
+        <div class="col col-2">
+          <div class="form-item">
+            <input #champ2 type="text" value="{{(selectedPlayer | async)?.favoriteChampions[1] }}" class="form-item">
+          </div>
+        </div>
+        <div class="col col-2">
+          <div class="form-item">
+            <input #champ3 type="text" value="{{(selectedPlayer | async)?.favoriteChampions[2] }}" class="form-item">
+          </div>
+        </div>
+      </div>
+      <div class="row gutters">
+        <div class="form-item col col-4 offset-2">
+            <label>Role: </label>
+            <input #role type="text" value="{{(selectedPlayer | async)?.role }}" class="form-item">
+        </div>
+        <div class="form-item col col-4">
+            <label>Division: </label>
+            <input #division type="text" value="{{(selectedPlayer | async)?.division }}" class="form-item">
+        </div>
+      </div>
+      <div class="form-item col col-8 offset-2">
+          <label>Catchphrase: </label>
+          <input #phrase type="text" value="{{(selectedPlayer | async)?.catchPhrase }}" class="form-item">
+      </div>
+      <div class="form-item col col-8 offset-2">
+          <label>Bio: </label>
+          <textarea #bio rows="6" value="{{(selectedPlayer | async)?.bio }}"></textarea>
+      </div>
+      <div class="form-item col-8 offset-2">
+          <label>Avatar/img URL: </label>
+          <input #url type="text" value="{{(selectedPlayer | async)?.image }}" class="form-item">
+      </div>
+      <div class="form-item">
+          <button  class="col offset-2" (click)="updatePlayer(name.value, tag.value, url.value, bio.value, champ1.value, champ2.value, champ3.value, role.value, division.value, phrase.value)">Update</button>
+          <button (click)="hideNewPlayerForm()" class="button secondary outline col offset-1">Close Form</button>
+      </div>
+  </form>
+</div>
