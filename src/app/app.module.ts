@@ -16,7 +16,6 @@ import { PlayerListComponent } from './player-list/player-list.component';
 import { EditPlayerComponent } from './edit-player/edit-player.component';
 import { AdminComponent } from './admin/admin.component';
 import { AddPlayerComponent } from './add-player/add-player.component';
-import { NewFanComponent } from './new-fan/new-fan.component';
 import { RosterPageComponent } from './roster-page/roster-page.component';
 
 export const firebaseConfig = {
@@ -36,7 +35,6 @@ export const firebaseConfig = {
     EditPlayerComponent,
     AdminComponent,
     AddPlayerComponent,
-    NewFanComponent,
     RosterPageComponent
   ],
   imports: [

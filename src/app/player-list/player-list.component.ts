@@ -13,12 +13,17 @@ import { FirebaseListObservable } from 'angularfire2/database';
 })
 export class PlayerListComponent implements OnInit {
   players: FirebaseListObservable<any[]>;
+  admin: boolean = null;
 
   constructor(private router: Router, private playerService: PlayerService) { }
 
   ngOnInit() {
     this.players = this.playerService.getPlayers();
+    var adminStatus = this.playerService.getAdminStatus().subscribe((admin)=>{
+      this.admin = admin.value;
 
+    });
+    console.log(this.admin);
   }
 
   goToDetailsPage(player: any) {
