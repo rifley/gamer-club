@@ -4,7 +4,6 @@
     <li class="c-nav__item c-nav__item--info"><a routerLink="">Home</a></li>
     <li class="c-nav__item"><a routerLink="roster">Team Roster</a></li>
     <li class="c-nav__item"><a routerLink="about">About</a></li>
-    <li class="c-nav__item"><a routerLink="">News</a></li>
     <li (click)="setAdmin()" *ngIf="!admin" class="c-nav__item c-nav__item--right">Admin</li>
     <li (click)="setNormalUser()" *ngIf="admin" class="c-nav__item c-nav__item--right">Admin Off</li>
   </ul>
