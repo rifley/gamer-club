@@ -1,6 +1,6 @@
 # LiciousIndeed
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+A club page dedicated to League of Legends players in the Licious Indeed Club.
 
 ## Development server
 
@@ -25,7 +25,8 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 ## API/ Database Connectivity
 
-In licious-indeed/src/app/api-keys.ts\
+In licious-indeed/src/app create a new file api-keys.ts.
+
 
   `export let masterFirebaseConfig = {
       apiKey: '',

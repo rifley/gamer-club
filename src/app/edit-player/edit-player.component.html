@@ -1,4 +1,5 @@
 <button *ngIf="admin && !showing" (click)="showEditPlayerForm()">Edit Player</button>
+<button *ngIf="admin" (click)="deletePlayer()">Delete Player</button>
 <div *ngIf="showing && admin" id="editPlayer">
   <form class="form">
     <div class="row gutters">

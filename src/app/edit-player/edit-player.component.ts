@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Player } from '../player.model';
 import { PlayerService } from '../player.service';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 
 
 @Component({
@@ -15,7 +15,7 @@ export class EditPlayerComponent implements OnInit {
   activePlayer: any;
   admin: boolean;
   showing: boolean;
-  constructor(private playerService: PlayerService, private route: ActivatedRoute) { }
+  constructor(private playerService: PlayerService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
@@ -43,6 +43,11 @@ export class EditPlayerComponent implements OnInit {
 
   hideEditPlayerForm() {
     this.showing = false;
+  }
+
+  deletePlayer() {
+    this.playerService.deletePlayer(this.playerId);
+    this.router.navigate(['roster']);
   }
 
 }

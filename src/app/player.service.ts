@@ -37,6 +37,11 @@ export class PlayerService {
     this.players.push(newPlayer);
   }
 
+  deletePlayer(playerId: string) {
+    let player = this.getPlayerById(playerId);
+    player.remove();
+  }
+
   updatePlayer(updatedPlayer: Player, id: string){
     let playerInFirebase = this.getPlayerById(id);
     playerInFirebase.update({name: updatedPlayer.name,
