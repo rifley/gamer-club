@@ -1,5 +1,5 @@
-<button (click)="showNewPlayerForm()">Edit Player</button>
-<div id="editPlayer">
+<button *ngIf="admin && !showing" (click)="showEditPlayerForm()">Edit Player</button>
+<div *ngIf="showing" id="editPlayer">
   <form class="form">
     <div class="row gutters">
       <div class="col col-5 offset-2">
@@ -59,7 +59,7 @@
       </div>
       <div class="form-item">
           <button  class="col offset-2" (click)="updatePlayer(name.value, tag.value, url.value, bio.value, champ1.value, champ2.value, champ3.value, role.value, division.value, phrase.value)">Update</button>
-          <button (click)="hideNewPlayerForm()" class="button secondary outline col offset-1">Close Form</button>
+          <button (click)="hideEditPlayerForm()" class="button secondary outline col offset-1">Close Form</button>
       </div>
   </form>
 </div>

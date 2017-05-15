@@ -13,6 +13,8 @@ export class EditPlayerComponent implements OnInit {
   @Input() selectedPlayer;
   playerId: string;
   activePlayer: any;
+  admin: boolean;
+  showing: boolean;
   constructor(private playerService: PlayerService, private route: ActivatedRoute) { }
 
   ngOnInit() {
@@ -22,7 +24,10 @@ export class EditPlayerComponent implements OnInit {
     let currentPlayer = this.selectedPlayer.subscribe((player)=> {
       console.log(player);
       this.activePlayer = player;
-    })
+    });
+    let adminStatus = this.playerService.getAdminStatus().subscribe((admin) => {
+      this.admin = admin.value;
+    });
     console.log(this.activePlayer);
   }
 
@@ -30,7 +35,14 @@ export class EditPlayerComponent implements OnInit {
     let favoriteChampions: string[] = [champ1, champ2, champ3];
     let updatedPlayer: Player = new Player(name, tag, url, bio, favoriteChampions, role, division, catchPhrase);
     this.playerService.updatePlayer(updatedPlayer, this.playerId);
+  }
 
+  showEditPlayerForm() {
+    this.showing = true;
+  }
+
+  hideEditPlayerForm() {
+    this.showing = false;
   }
 
 }
