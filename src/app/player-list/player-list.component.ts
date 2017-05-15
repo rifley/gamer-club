@@ -14,6 +14,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class PlayerListComponent implements OnInit {
   players: FirebaseListObservable<any[]>;
   admin: boolean = null;
+  filterByDivision: string;
 
   constructor(private router: Router, private playerService: PlayerService) { }
 
@@ -27,6 +28,10 @@ export class PlayerListComponent implements OnInit {
 
   goToDetailsPage(player: any) {
      this.router.navigate(['players', player.$key]);
+  }
+
+  onChange(optionFromMenu) {
+    this.filterByDivision = optionFromMenu;
   }
 
 }

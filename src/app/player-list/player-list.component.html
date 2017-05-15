@@ -1,6 +1,16 @@
 <h1> Players </h1>
 
-<div *ngFor="let player of players | async" class="c-card c-card--higher playerCard"><!-- I had a hard time getting all these instances to respond to class styling. It is only affecting the first one -->
+<select (change)="onChange($event.target.value)">
+  <option value="Wood">Wood</option>
+  <option value="Bronze">Bronze</option>
+  <option value="Silver">Silver</option>
+  <option value="Gold">Gold</option>
+  <option value="Platinum">Plat</option>
+  <option value="Diamond">Diamond</option>
+</select>
+
+
+<div *ngFor="let player of players | async | division:filterByDivision " class="c-card c-card--higher playerCard"><!-- I had a hard time getting all these instances to respond to class styling. It is only affecting the first one -->
   <img class="o-image" src="#" alt="{{player.name}} in their finest">
   <header class="c-card__header">
     <h2 class="c-heading">

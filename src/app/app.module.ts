@@ -17,6 +17,7 @@ import { EditPlayerComponent } from './edit-player/edit-player.component';
 import { AdminComponent } from './admin/admin.component';
 import { AddPlayerComponent } from './add-player/add-player.component';
 import { RosterPageComponent } from './roster-page/roster-page.component';
+import { DivisionPipe } from './division.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -35,7 +36,8 @@ export const firebaseConfig = {
     EditPlayerComponent,
     AdminComponent,
     AddPlayerComponent,
-    RosterPageComponent
+    RosterPageComponent,
+    DivisionPipe
   ],
   imports: [
     BrowserModule,
