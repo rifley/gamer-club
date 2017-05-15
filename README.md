@@ -1,43 +1,38 @@
-# LiciousIndeed
+# Licious Indeed
 
+##### By _Riley Watts_ 05/15/17
+
+## Description
 A club page dedicated to League of Legends players in the Licious Indeed Club.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* In your terminal, run `$ git clone https://github.com/rifley/gamer-club.git`
+* navigate to the gamer-club repository
+* Once inside the repository, run `$ npm install` followed by `$ bower install`
+* Create a new file called `api-keys.ts` in the gamer-club/src/app directory.
+* This file should look like this:
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## API/ Database Connectivity
-
-In licious-indeed/src/app create a new file api-keys.ts.
-
-
-  `export let masterFirebaseConfig = {
+  _export let masterFirebaseConfig = {
       apiKey: '',
       authDomain: '',
       databaseURL: '',
       projectId: '',
       storageBucket: '',
       messagingSenderId: ''
-    };
-`
+    };_
+
+    You will then need to create a firebase database and populate these fields with your specific database information.
+
+* When done you can run `$ ng serve` in your terminal, building and deploying your app.
+
+* Visit the web-app at this link [http://localhost:4200](http://localhost:4200)
+
 
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## License
+This software is licensed under the MIT license. Copyright (c) 2017 Riley Watts
