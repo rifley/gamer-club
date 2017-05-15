@@ -36,3 +36,17 @@ h1 {
   border-radius: 6px;
   padding: 5px;
 }
+
+#filterDiv {
+  width: 25%;
+  margin-bottom: 30px;
+}
+
+#filterLabel {
+  margin-top: 10px;
+  width: 30%;
+}
+
+#filter {
+  margin-left: 20%;
+}

@@ -1,5 +1,5 @@
 <button *ngIf="admin && !showing" (click)="showEditPlayerForm()">Edit Player</button>
-<div *ngIf="showing" id="editPlayer">
+<div *ngIf="showing && admin" id="editPlayer">
   <form class="form">
     <div class="row gutters">
       <div class="col col-5 offset-2">

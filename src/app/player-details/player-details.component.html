@@ -1,5 +1,30 @@
-<div>
-   <h3>{{(player | async)?.name}}</h3> <p>{{(player | async)?.$key}}</p>
+<br>
+<div class="jumbotron">
+   <h3>{{(player | async)?.name}} aka <em>{{(player | async)?.tag}}</em> </h3>
 </div>
+
+   <div class="well">
+     <p> {{(player | async)?.bio }} </p>
+   </div>
+
+   <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Favorite Champions</h3>
+    </div>
+    <div class="panel-body">
+      {{(player | async)?.favoriteChampions[0] }}, {{(player | async)?.favoriteChampions[1] }}, {{(player | async)?.favoriteChampions[2] }}
+    </div>
+  </div>
+  <div class="panel panel-success">
+   <div class="panel-heading">
+     <h3 class="panel-title">Role and Division</h3>
+   </div>
+   <div class="panel-body">
+     {{(player | async)?.role }} in {{(player | async)?.division}}
+   </div>
+ </div>
+
+
+
 
 <app-edit-player [selectedPlayer]="player"></app-edit-player>
